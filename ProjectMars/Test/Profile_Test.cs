@@ -134,6 +134,7 @@ namespace ProjectMars.Pages
             Certification profilePageObj = new Certification();
             profilePageObj.ProfilePageCertificationDelete(driver);
         }
+        
 
     }
 }

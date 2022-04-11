@@ -14,11 +14,11 @@ namespace ProjectMars.Pages
         public void GoToHomePage(IWebDriver driver)
         {
             Thread.Sleep(3000);
-            Wait.WaittobeVisible(driver, "XPath", "//*[@id='account-profile-section']/div/section[1]/div/a[2]", 120);
+            Wait.WaittobeVisible(driver, "XPath", "//*[@id='account-profile-section']/div/section[1]/div/a[2]", 10);
 
             IWebElement profileIcon = driver.FindElement(By.XPath("//*[@id='account-profile-section']/div/section[1]/div/a[2]"));
             profileIcon.Click();
-
+            Thread.Sleep(3000);
         }
         public string checkUser(IWebDriver driver)
         {

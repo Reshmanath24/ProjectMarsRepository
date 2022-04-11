@@ -32,7 +32,7 @@ namespace ProjectMars.Utilities
         [OneTimeTearDown]
         public void CloseTestRun()
         {
-            //driver.Quit();
+            driver.Quit();
         }
     }
 }
